@@ -2,56 +2,30 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: false
+description: A collection of the participated projects
+nav: true
 display_categories: [work, fun]
 horizontal: false
 ---
-<div class="projects">
-  {% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-    {% for category in page.display_categories %}
-      <h2 class="category">{{ category }}</h2>
-      {% assign categorized_projects = site.projects | where: "category", category %}
-      {% assign sorted_projects = categorized_projects | sort: "importance" %}
-      <!-- Generate cards for each project -->
-      {% if page.horizontal %}
-        <div class="container">
-          <div class="row row-cols-2">
-          {% for project in sorted_projects %}
-            {% include projects_horizontal.html %}
-          {% endfor %}
-          </div>
-        </div>
-      {% else %}
-        <div class="grid">
-          {% for project in sorted_projects %}
-            {% include projects.html %}
-          {% endfor %}
-        </div>
-      {% endif %}
-    {% endfor %}
 
-  {% else %}
-  <!-- Display projects without categories -->
-    {% assign sorted_projects = site.projects | sort: "importance" %}
-    <!-- Generate cards for each project -->
-    {% if page.horizontal %}
-      <div class="container">
-        <div class="row row-cols-2">
-        {% for project in sorted_projects %}
-          {% include projects_horizontal.html %}
-        {% endfor %}
-        </div>
-      </div>
-    {% else %}
-      <div class="grid">
-        {% for project in sorted_projects %}
-          {% include projects.html %}
-        {% endfor %}
-      </div>
-    {% endif %}
+**2018-2021**	Development of methods, algorithms and computational architecture to restore the optical parameters of the real environment in the systems of augmented and mixed realities
 
-  {% endif %}
+**2018-2018**	Development of a method and computational mechanism for accelerated calculation of the scene depth map in augmented and mixed reality systems
+	
+**2018-2019**	Control of Cyber-Physical Systems
 
-</div>
+**2017-2018**	Development of methods for intelligent control of cyber-physical systems using quantum technologies
+
+**2016-2018**	Development of a multisensor 3D-vision robotic complex
+
+**2016-2019**	Development of software-configured geographically distributed data center network protected by quantum technologies
+
+**2015-2018**	Development of technology for constructing software-configurable quantum cryptographic networks
+
+**2015-2017**	Methods for designing key systems of information infrastructure
+
+**2014-2014**	Methods of the mechanisms for ensuring the reliability of hardware-redundant information-measuring systems based on FPGA
+
+**2013-2014**	Creation of seamless technologies for designing embedded systems and systems on a chip based on reconfigurable architectures
+
+**2013-2017**	Nonlinear and adaptive control of complex systems
