@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2021-10-18 
 inline: true
+visible: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Последняя консультация по закрытию долгов будет в пятницу 29 октября.
